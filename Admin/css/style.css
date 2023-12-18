@@ -1,0 +1,131 @@
+.single-product input{/*style no of products input*/
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+.orderStatus-w{
+    color: #a85202;
+    background-color: #ffc187;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.orderStatus-c{
+    color: #0d5a9d;
+    background-color: #6bafec;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.orderStatus-s{
+    color: #9502a8;
+    background-color: #dc6beb;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.orderStatus-d{
+    color: #006d10;
+    background-color: #84f695;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.orderStatus-ca{
+    color: #6d0700;
+    background-color: #e0544a;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.small-img-row{
+    display:flex;/*make all 4 images flexible*/
+    justify-content: space-between;/*this will make all 4 images to take equal available space in single line without any gap, mean 25% each col, and to place gap between each col, we call col below and made 24% so to have a gap*/
+}
+.small-img-col{
+    flex-basis: 24%;/*this will make each column to take 24% space and 1% gap*/
+}
+.single-product .col-2 p{
+    margin-left: 0px;
+}
+.single-product .col-2 h1{
+    margin-left: 0px;
+}
+/*Cart Items*/
+.cart-page{
+    margin: 80px auto;
+}
+
+
+table{
+    width: 100%;/*takes full width of the web page*/
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #4E73DE;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #4E73DE;
+    ffont-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+td small{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;/*put content with max width at the end, if flex start, then put content at start with max width as we mentioned max width below*/
+}
+.total-price table{
+    border-top: 3px solid #4E73DE;
+    width: 100%;
+    max-width: 480px;
+}
+td:last-child{
+    text-align: right;/*align all last column values to right, in our case, these are prices*/
+}
+th:last-child{
+    text-align: right;
+}
+
+.statusBtn{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.statusBtn a{
+    margin-left: 40px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.statusBtn a:hover {
+    text-decoration: none;
+}
